@@ -47,11 +47,11 @@ public class Bola {
         this.sharif = sharif;
     }
 
-    public Enum getJins() {
+    public String getJins() {
         return jins;
     }
 
-    public void setJins(Enum jins) {
+    public void setJins(String jins) {
         this.jins = jins;
     }
 
@@ -94,7 +94,7 @@ public class Bola {
     @Column(unique = true, length = 100, nullable = false)
     private String sharif;
     @Column(unique = true, length = 100, nullable = false)
-    private Enum jins;
+    private String jins;
     @Column(unique = true, length = 100, nullable = false)
     private LocalDate birthday;
     private String manzil;
