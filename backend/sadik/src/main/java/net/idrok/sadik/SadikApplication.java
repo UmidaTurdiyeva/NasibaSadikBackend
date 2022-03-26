@@ -1,13 +1,13 @@
-package net.idrok.bogcha;
+package net.idrok.sadik;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BogchaApplication {
+public class SadikApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BogchaApplication.class, args);
+		SpringApplication.run(SadikApplication.class, args);
 	}
 
 }

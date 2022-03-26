@@ -1,10 +1,10 @@
-package net.idrok.bogcha;
+package net.idrok.sadik;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BogchaApplicationTests {
+class SadikApplicationTests {
 
 	@Test
 	void contextLoads() {
