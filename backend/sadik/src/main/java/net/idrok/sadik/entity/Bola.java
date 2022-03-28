@@ -14,6 +14,47 @@ public class Bola {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(unique = true, length = 100, nullable = false)
+    private String ism;
+    @Column(unique = true, length = 100, nullable = false)
+    private String familiya;
+    @Column(unique = true, length = 100, nullable = false)
+    private String sharif;
+    @Column(unique = true, length = 100, nullable = false)
+    private String jins;
+    @Column(unique = true, length = 100, nullable = false)
+    private LocalDate birthday;
+    private String manzil;
+    private Number contact;
+    private Number tulov;
+
+    public Bola() {
+    }
+
+
+    
+
+
+
+
+    public Bola(Long id, String ism, String familiya, String sharif, String jins, LocalDate birthday, String manzil,
+            Number contact, Number tulov) {
+        this.id = id;
+        this.ism = ism;
+        this.familiya = familiya;
+        this.sharif = sharif;
+        this.jins = jins;
+        this.birthday = birthday;
+        this.manzil = manzil;
+        this.contact = contact;
+        this.tulov = tulov;
+    }
+
+
+
+
+
+
 
     public Long getId() {
         return id;
@@ -87,18 +128,6 @@ public class Bola {
         this.tulov = tulov;
     }
 
-    @Column(unique = true, length = 100, nullable = false)
-    private String ism;
-    @Column(unique = true, length = 100, nullable = false)
-    private String familiya;
-    @Column(unique = true, length = 100, nullable = false)
-    private String sharif;
-    @Column(unique = true, length = 100, nullable = false)
-    private String jins;
-    @Column(unique = true, length = 100, nullable = false)
-    private LocalDate birthday;
-    private String manzil;
-    private Number contact;
-    private Number tulov;
+  
 
 }
