@@ -19,7 +19,7 @@ import net.idrok.sadik.entity.MahsulotUlchov;
 import net.idrok.sadik.service.MahsulotUlchovService;
 
 @RestController
-@RequestMapping("/api/MahsulotUlchov")
+@RequestMapping("/api/mahsulotUlchov")
 @CrossOrigin(maxAge = 3600)
 public class MahsulotUlchovController {
     
@@ -39,7 +39,7 @@ public class MahsulotUlchovController {
     public ResponseEntity<MahsulotUlchov> create(@RequestBody MahsulotUlchov mahsulotUlchov){
         try{
             MahsulotUlchov mt = mahsulotUlchovService.create(mahsulotUlchov);
-            return ResponseEntity.created(URI.create("/api/MahsulotUlchov" + mt.getId())).body(mt);
+            return ResponseEntity.created(URI.create("/api/mahsulotUlchov" + mt.getId())).body(mt);
         } catch( Exception ex){
             return ResponseEntity.badRequest().build();
         }
