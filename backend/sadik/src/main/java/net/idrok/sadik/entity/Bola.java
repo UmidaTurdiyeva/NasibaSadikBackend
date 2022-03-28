@@ -32,11 +32,6 @@ public class Bola {
     }
 
 
-    
-
-
-
-
     public Bola(Long id, String ism, String familiya, String sharif, String jins, LocalDate birthday, String manzil,
             Number contact, Number tulov) {
         this.id = id;
